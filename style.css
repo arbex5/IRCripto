@@ -1,0 +1,102 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc; /* Borda cinza mais clara */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* table-layout: fixed; */ /* Remova esta linha */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box; /* Inclui padding e borda na largura total da célula */
+    word-wrap: break-word; /* Força a quebra de linha no texto */
+    min-width: 0; /* Remover ou diminuir o min-width */
+}
+
+th {
+    background-color: #f5f5f5;
+}
+
+table#asset-table tr {
+    border-bottom: 2px solid #ddd;
+}
+
+/* Aumento da largura da coluna "Ativo" */
+table#asset-table th:first-child,
+table#asset-table td:first-child {
+    width: 15%;
+}
+
+/* Estilos para os botões */
+button {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 1em 0; /* Adiciona margem de 1em em cima e embaixo dos botões */
+}
+
+button:hover {
+    background-color: #1976D2;
+}
+
+/* Estilos para os ícones SVG */
+.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+    fill: white;
+}
+
+/* Estilos para o ícone de excluir */
+.delete-row {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    fill: #FF5252; /* Vermelho mais discreto */
+    opacity: 0.7; /* Opacidade reduzida para torná-lo mais discreto */
+}
+
+.delete-row:hover {
+    opacity: 1; /* Opacidade total ao passar o mouse por cima */
+}
+
+#total-value {
+    margin-top: 10px; 
+    font-weight: bold;
+}
+
